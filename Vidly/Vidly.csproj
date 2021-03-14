@@ -177,11 +177,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103141029004_InitialModel.cs" />
+    <Compile Include="Migrations\202103141029004_InitialModel.Designer.cs">
+      <DependentUpon>202103141029004_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103141049198_AddSisSubscribedtoCustomer.cs" />
+    <Compile Include="Migrations\202103141049198_AddSisSubscribedtoCustomer.Designer.cs">
+      <DependentUpon>202103141049198_AddSisSubscribedtoCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103141058420_AddMembershipType.cs" />
+    <Compile Include="Migrations\202103141058420_AddMembershipType.Designer.cs">
+      <DependentUpon>202103141058420_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103141102208_PopulateMembershiptype.cs" />
+    <Compile Include="Migrations\202103141102208_PopulateMembershiptype.Designer.cs">
+      <DependentUpon>202103141102208_PopulateMembershiptype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103141109473_CustomerModelUpdate.cs" />
+    <Compile Include="Migrations\202103141109473_CustomerModelUpdate.Designer.cs">
+      <DependentUpon>202103141109473_CustomerModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\RandomCustomerMovie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -278,6 +300,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103141029004_InitialModel.resx">
+      <DependentUpon>202103141029004_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103141049198_AddSisSubscribedtoCustomer.resx">
+      <DependentUpon>202103141049198_AddSisSubscribedtoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103141058420_AddMembershipType.resx">
+      <DependentUpon>202103141058420_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103141102208_PopulateMembershiptype.resx">
+      <DependentUpon>202103141102208_PopulateMembershiptype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103141109473_CustomerModelUpdate.resx">
+      <DependentUpon>202103141109473_CustomerModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
